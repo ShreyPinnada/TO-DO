@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
   <body>
+    <h1 class="page-title">To Do.</h1>
     <div id="main-container">
       <div id="left-container">
         <input type="text" id="title-textbox" placeholder="Enter a new task" />
@@ -17,15 +18,19 @@
           placeholder="Enter the Description"
         ></textarea>
         <button class="submit-button">Submit</button>
-        <span class="tasks-info">Completed</span>
-        <span class="tasks-info">Total</span>
+        <span class="tasks-info">Completed : 0</span>
+        <span class="tasks-info">Total Tasks Done : 0</span>
       </div>
       <div id="right-container">
         <div class="task">
           <span class="task-title">Task Title 1...</span>
           <div class="task-buttons">
-            <button class="completed-btn">C</button>
-            <button class="delete-btn">D</button>
+            <button class="completed-btn">
+              <img src="../assets/images/icons8-checkmark-24.png" alt="Done" />
+            </button>
+            <button class="delete-btn">
+              <img src="../assets/images/trash-2-24.ico" alt="Delete" />
+            </button>
           </div>
         </div>
       </div>
