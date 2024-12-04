@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: #bbd6fd;
 }
  
 body {
@@ -17,7 +18,7 @@ body {
     height: 80%;
     max-width: 90%;
     max-height: 90%;
-    background-color: rgb(160, 160, 160);
+    background-color: #d8e8ff;
     border-radius: 30px;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +27,7 @@ body {
 #left-container, #right-container {
     width: 50%;
     height : 93%;
-    background-color: azure;
+    background-color:#e9f2ff;
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 30px;
@@ -46,7 +47,8 @@ body {
 
 #title-textbox, #description-textbox, .tasks-info, .submit-button {
     margin: 5%;
-    font-family: 'poppins', 'Poppins', sans-serif;;
+    font-family: 'poppins', 'Poppins', sans-serif;
+    font-size: medium;
 }
 
 #title-textbox {
@@ -70,6 +72,37 @@ body {
     height:10%;
     border-radius: 30px;
     border: none;
-    background-color: rgb(77, 77, 77);
+    background-color: #4382ec;
     font-size: medium;
+    cursor:pointer;
+    color: #ffffff
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    background-color: #ffffff;
+    margin: 5%;
+    border-radius: 30px;
+    width: 80%;
+}
+
+.task-title {
+    font-size: medium;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.completed-btn, .delete-btn {
+        padding: 5px 10px;
+        background-color: #4382ec;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: large;
 }
