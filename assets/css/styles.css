@@ -44,7 +44,7 @@ body {
     margin-right: 2%;
 }
 
-#title-textbox, #description-textbox, .tasks-info {
+#title-textbox, #description-textbox, .tasks-info, .submit-button {
     margin: 5%;
     font-family: 'poppins', 'Poppins', sans-serif;;
 }
@@ -62,4 +62,14 @@ body {
     padding: 4%;
     border-radius: 30px;
     border: none;
+    overflow-y: auto;
+}
+
+.submit-button {
+    width:20%;
+    height:10%;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(77, 77, 77);
+    font-size: medium;
 }
