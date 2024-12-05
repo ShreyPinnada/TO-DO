@@ -86,12 +86,18 @@ function addTaskToRightPanel(taskTitle, taskDescription) {
 }
 
 function updateCounts() {
-  document.getElementById(
-    "completed"
-  ).textContent = `Completed: ${completedTasks}`;
-  document.getElementById(
-    "total-tasks"
-  ).textContent = `Total Tasks: ${totalTasks}`;
+  const completedElement = document.getElementById("completed");
+  const totalTasksElement = document.getElementById("total-tasks");
+
+  completedElement.textContent = `Completed: ${completedTasks}`;
+  totalTasksElement.textContent = `Total Tasks: ${totalTasks}`;
+
+  completedElement.classList.add("animate-text");
+  totalTasksElement.classList.add("animate-text");
+  setTimeout(() => {
+    completedElement.classList.remove("animate-text");
+    totalTasksElement.classList.remove("animate-text");
+  }, 500);
 }
 
 function createModalTitleAndDescription(title, description) {
