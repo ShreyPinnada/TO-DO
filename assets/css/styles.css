@@ -57,6 +57,7 @@ body {
 #right-container {
     margin-left: 1%;
     margin-right: 2%;
+    overflow-y: auto;
 }
 
 #title-textbox, #description-textbox, .tasks-info, .submit-button {
@@ -70,6 +71,7 @@ body {
     padding: 4%;
     border-radius: 30px;
     border: none;
+    background-color: #ffffff;
 }
 
 #description-textbox {
@@ -79,6 +81,7 @@ body {
     border-radius: 30px;
     border: none;
     overflow-y: auto;
+    background-color: #ffffff;
 }
 
 .submit-button {
@@ -97,7 +100,7 @@ body {
     justify-content: space-between;
     padding: 4%;
     background-color: #ffffff;
-    margin: 5%;
+    margin: 3%;
     border-radius: 30px;
     width: 80%;
 }
@@ -110,7 +113,7 @@ body {
     text-overflow: ellipsis;
 }
 
-.completed-btn, .delete-btn {
+.completed-btn, .delete-btn, .info-btn{
         padding: 5px 10px;
         background-color: #4382ec;
         color: white;
@@ -119,4 +122,59 @@ body {
         cursor: pointer;
         margin-left: 10px;
         font-size: large;
+}
+
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    background: #bbd6fde5;
+    z-index: 1000;
+    border-radius: 30px;
+}
+
+.modal-content {
+    background-color: #e9f2ffec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    text-align:start;
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    color: #1b3041;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 30px;
+    width: 85%;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: #1b3041;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 30px;
+    width: 85%;
+    height: 70%;
+    margin-top: 1%;
+    max-height: 70%;
+    overflow-y: auto;
+}
+
+.modal-content button {
+    background-color: #4382ec;
+    color:white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    margin: 2%;
 }

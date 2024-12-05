@@ -17,12 +17,12 @@
           id="description-textbox"
           placeholder="Enter the Description"
         ></textarea>
-        <button class="submit-button">Submit</button>
-        <span class="tasks-info">Completed : 0</span>
-        <span class="tasks-info">Total Tasks Done : 0</span>
+        <button class="submit-button" onclick="createNewTask()">Submit</button>
+        <span id="completed" class="tasks-info">Completed : 0</span>
+        <span id="total-tasks" class="tasks-info">Total Tasks Done : 0</span>
       </div>
       <div id="right-container">
-        <div class="task">
+        <!-- <div class="task">
           <span class="task-title">Task Title 1...</span>
           <div class="task-buttons">
             <button class="completed-btn">
@@ -32,8 +32,17 @@
               <img src="../assets/images/trash-2-24.ico" alt="Delete" />
             </button>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
+
+    <!-- <div class="modal-overlay">
+      <div class="modal-content">
+        <h2>Modal Title</h2>
+        <p>Modal Description</p>
+        <button>Close</button>
+      </div>
+    </div> -->
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
