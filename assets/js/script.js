@@ -82,7 +82,7 @@ function addTaskToRightPanel(taskTitle, taskDescription) {
     }
   });
 
-  document.getElementById("right-container").appendChild(taskDiv);
+  document.getElementById("right-container").prepend(taskDiv);
 }
 
 function updateCounts() {

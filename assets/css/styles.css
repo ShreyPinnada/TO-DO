@@ -152,6 +152,7 @@ body {
         cursor: pointer;
         margin-left: 10px;
         font-size: large;
+        animation: hoverAnimation 0.3s ease-in-out;
 }
 
 .modal-overlay {
@@ -165,7 +166,7 @@ body {
     z-index: 1000;
     border-radius: 30px;
     animation: emerge 0.3s ease-out;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .modal-content {
